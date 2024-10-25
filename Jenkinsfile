@@ -285,7 +285,7 @@ pipeline {
                     script {
                         def images = ['jmeter-master:${JMETER_TAG}',
                                     'kafka:3.7.0',
-                                    'mysql:8.0.35',
+                                    'mysql:8.0.36',
                                     'redis:7.2.5-alpine',
                                     'minio:RELEASE.2023-04-13T03-08-07Z',
                                     'prometheus:v2.42.0',
@@ -328,7 +328,7 @@ pipeline {
                         ${IMAGE_PREFIX}/data-streaming:${RELEASE} \\
                         ${IMAGE_PREFIX}/jmeter-master:${JMETER_TAG} \\
                         ${IMAGE_PREFIX}/kafka:3.7.0 \\
-                        ${IMAGE_PREFIX}/mysql:8.0.35 \\
+                        ${IMAGE_PREFIX}/mysql:8.0.36 \\
                         ${IMAGE_PREFIX}/redis:7.2.5-alpine \\
                         ${IMAGE_PREFIX}/minio:RELEASE.2023-04-13T03-08-07Z \\
                         ${IMAGE_PREFIX}/prometheus:v2.42.0 \\
